@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts(tubiao)/iconfont.css">
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <div class="warp">
+        <header>
+            <p>
+                <a href="">
+                    <</a>
+            </p>
+            <p class="middle">无法连接</p>
+            <p class="right"><i class="icon iconfont icon-gengduo"></i>
+                <b><i class="icon iconfont icon-fengjing"></i></b>
+            </p>
+        </header>
+        <nav class="list">
+            <dl>
+                <dd><i class="icon iconfont icon-shengyin active"></i></dd>
+                <dt>电源</dt>
+            </dl>
+            <dl>
+                <dd><i class="icon iconfont icon-guangpan"></i></dd>
+                <dt>首页</dt>
+            </dl>
+            <dl>
+                <dd><i class="icon iconfont icon-shengyin"></i></dd>
+                <dt>菜单</dt>
+            </dl>
+            <dl>
+                <dd><i class="icon iconfont icon-guangpan"></i></dd>
+                <dt>截屏</dt>
+            </dl>
+        </nav>
+        <section>
+            <p>滑动控制上下左右，点击确定</p>
+            <p>长按调节电视音量</p>
+        </section>
+    </div>
+</body>
+<script>
+    $("dl").on("click", function() {
+        $(this).find("i").addClass("active");
+        $(this).siblings().find("i").removeClass("active");
+    })
+</script>
+
+</html>
